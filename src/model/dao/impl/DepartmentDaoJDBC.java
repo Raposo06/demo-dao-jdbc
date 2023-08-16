@@ -155,8 +155,8 @@ public class DepartmentDaoJDBC implements DepartmentDAO{
 	
 	private Department instatiateDeparment(ResultSet rs) throws SQLException {
 		Department dep = new Department();
-		dep.setId(rs.getInt("DepartmentId"));
-		dep.setName(rs.getString("DepName"));
+		dep.setId(rs.getInt("Id"));
+		dep.setName(rs.getString("Name"));
 
 		return dep;
 	}
